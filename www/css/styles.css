@@ -7,7 +7,7 @@ img {
 }
 
 .wrapper-top {
-    height: 300px;
+    height: 250px;
     width: 400px;
     display: flex;
     align-items: flex-start;
@@ -22,7 +22,7 @@ img {
 }
 
 .wrapper-bottom {
-    height: 300px;
+    height: 250px;
     width: 400px;
     display: flex;
     align-items: flex-end;
@@ -42,6 +42,12 @@ img {
     margin-right: 50px;
 }
 
+.button-wrapper-title {
+  text-align: center;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
 
 .button-design {
   background-color: #fbeee0;
@@ -53,7 +59,7 @@ img {
   display: inline-block;
   font-weight: 600;
   font-size: 48px;
-  padding: 0 18px;
+  padding: 0 10px;
   line-height: 70px;
   text-align: center;
   text-decoration: none;
@@ -80,11 +86,47 @@ img {
 
 .text-name-left {
     margin-top: 5px;
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
 }
 
 .text-name-right {
     margin-top: 5px;
-    margin-bottom: 5px;;
-    margin-left: 170px;
+    margin-bottom: 5px;
+    margin-left: 180px;
+}
+
+.photo-button{
+  background-color: #ff004c;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  padding: 4px 4px;
+  text-align: center;
+}
+
+.dread{
+  font-family: 'Nosifer', cursive;
+  text-align: center;
+}
+
+.dread-mini{
+  font-family: 'Nosifer', cursive;
+  text-align: center;
+  font-size: 8px;
+}
+
+.main-open{
+  margin-top: 250px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#e66465, #9198e5);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px;
 }
