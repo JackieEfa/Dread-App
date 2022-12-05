@@ -9,19 +9,52 @@ function onDeviceReady() {
         destinationType: Camera.DestinationType.FILE_URI
     }
 
-    $("#takephoto").on("click", takepic);
+    $("#takephoto").on("click", takepic); // for each photo section instead
+    $("#takephoto2").on("click", takepic);
+    $("#takephoto3").on("click", takepic);
+    $("#takephoto4").on("click", takepic);
 
     function takepic() {
         navigator.camera.getPicture(onSucess, onError, options);
     }
 
-    function onSucess(imageData){
+    function onSucess(imageData){ // may need to duplicate sucess functions for each image 
         console.log(imageData);
         resolveLocalFileSystemURL(imageData, function (fileEntry) {
             var myNewImage = fileEntry.toURL()
             console.log(myNewImage);
             // do something with URL, assign to src or create an html 
-            $("#takephoto").after("<img src='"+ myNewImage + "'>")
+            $(".image-space").attr("src", myNewImage) // targeting the css image on all at the momment i think 
+        }, onError);
+    }
+
+    function onSucess(imageData){ // may need to duplicate sucess functions for each image 
+        console.log(imageData);
+        resolveLocalFileSystemURL(imageData, function (fileEntry) {
+            var myNewImage = fileEntry.toURL()
+            console.log(myNewImage);
+            // do something with URL, assign to src or create an html 
+            $(".image-space1").attr("src", myNewImage) // targeting the css image on all at the momment i think 
+        }, onError);
+    }
+
+    function onSucess(imageData){ // may need to duplicate sucess functions for each image 
+        console.log(imageData);
+        resolveLocalFileSystemURL(imageData, function (fileEntry) {
+            var myNewImage = fileEntry.toURL()
+            console.log(myNewImage);
+            // do something with URL, assign to src or create an html 
+            $(".image-space2").attr("src", myNewImage) // targeting the css image on all at the momment i think 
+        }, onError);
+    }
+
+    function onSucess(imageData){ // may need to duplicate sucess functions for each image 
+        console.log(imageData);
+        resolveLocalFileSystemURL(imageData, function (fileEntry) {
+            var myNewImage = fileEntry.toURL()
+            console.log(myNewImage);
+            // do something with URL, assign to src or create an html 
+            $(".image-space3").attr("src", myNewImage) // targeting the css image on all at the momment i think 
         }, onError);
     }
 
@@ -72,3 +105,51 @@ function onDeviceReady() {
 
 
 }
+
+document.getElementById("StatusInput").addEventListener(
+    "click",
+    function(event) {
+      if (event.target.value === "Alive") {
+        event.target.value = "Dead";
+      } else {
+        event.target.value = "Alive";
+      }
+    },
+    false
+  );
+
+  document.getElementById("StatusInput1").addEventListener(
+    "click",
+    function(event) {
+      if (event.target.value === "Alive") {
+        event.target.value = "Dead";
+      } else {
+        event.target.value = "Alive";
+      }
+    },
+    false
+  );
+
+  document.getElementById("StatusInput2").addEventListener(
+    "click",
+    function(event) {
+      if (event.target.value === "Alive") {
+        event.target.value = "Dead";
+      } else {
+        event.target.value = "Alive";
+      }
+    },
+    false
+  );
+
+  document.getElementById("StatusInput3").addEventListener(
+    "click",
+    function(event) {
+      if (event.target.value === "Alive") {
+        event.target.value = "Dead";
+      } else {
+        event.target.value = "Alive";
+      }
+    },
+    false
+  );
