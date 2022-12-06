@@ -1,5 +1,9 @@
 /* add your own styles here */
 
+body {
+  background-color: #474545;
+}
+
 img {
     max-width: 30%;
     border: 2px solid;
